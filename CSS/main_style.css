@@ -4,6 +4,10 @@ html {
     background-color: beige;
 }
 
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
 .topnav {
     display: grid;
     grid-gap: 10px;
