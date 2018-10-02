@@ -51,15 +51,15 @@ ul.topnav li.right {
     float: right;
 }
 
-aside#rightnav ul {
+section#rightnav nav ul {
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(4, .25fr);
     list-style-type: none;
     background-color: white;
     float: right;
-    padding: 100px 100px 100px 100px;
+    padding: 25px;
     margin: 20px 40px 0 0;
 }
 
-aside#rightnav {}
+section#rightnav {}
