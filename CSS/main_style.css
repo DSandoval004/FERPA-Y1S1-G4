@@ -63,3 +63,28 @@ aside#rightnav ul {
 }
 
 aside#rightnav {}
+
+/* Footer Styles */
+footer {
+    background-color: #414C53;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .75);
+}
+
+footer>em:hover {
+    color: rgba(255, 255, 255, .75);
+    cursor: pointer;
+}
