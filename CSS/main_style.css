@@ -62,18 +62,66 @@ aside#rightnav ul {
     margin: 0;
 }
 
-aside#rightnav ul a {
-    text-decoration: none;
-    color: #315A59;
+#leftnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 30px;
+    transition: 0.5s;
 }
 
-#rightnav ul a:hover {
-    color: #DCCABD;
+#leftnav a {
+    padding: 10px 0px 6px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#leftnav a:hover {
+    color: #f1f1f1;
+}
+
+#leftnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    #leftnav {
+        padding-top: 15px;
+    }
+
+    #leftnav a {
+        font-size: .5em;
+    }
+}
+
+#navButton {
+    background: url(../Three\ Lines\ .png) no-repeat;
+    width: 34px;
+    height: 34px;
 }
 
 p {
     text-indent: 50px;
 }
+
+
 
 /* Footer Styles */
 footer {
