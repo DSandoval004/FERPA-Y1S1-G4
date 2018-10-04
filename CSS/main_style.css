@@ -56,12 +56,20 @@ aside#rightnav ul {
     grid-gap: 20px;
     grid-template-rows: repeat(4, .25fr);
     list-style-type: none;
-    background-color: white;
+    background-color: #968879;
     float: right;
-    padding: 100px 100px 100px 100px;
-    margin: 20px 40px 0 0;
+    padding: 40px;
+    margin: -60px 40px 0 0;
 }
 
+aside#rightnav ul a {
+    text-decoration: none;
+    color: #315A59;
+}
+
+#rightnav ul a:hover {
+    color: #DCCABD;
+}
 aside#rightnav {}
 
 /* Footer Styles */
