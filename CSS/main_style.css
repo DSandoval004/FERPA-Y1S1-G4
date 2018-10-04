@@ -112,7 +112,7 @@ aside#rightnav ul {
 }
 
 #navButton {
-    background: url(../Three\ Lines\ .png) no-repeat;
+    background: url(../Images/Three\ Lines\ .png) no-repeat;
     width: 34px;
     height: 34px;
 }
@@ -120,8 +120,6 @@ aside#rightnav ul {
 p {
     text-indent: 50px;
 }
-
-
 
 /* Footer Styles */
 footer {
