@@ -71,6 +71,10 @@ aside#rightnav ul a {
     color: #DCCABD;
 }
 
+p {
+    text-indent: 50px;
+}
+
 /* Footer Styles */
 footer {
     background-color: #414C53;
