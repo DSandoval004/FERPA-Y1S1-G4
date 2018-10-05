@@ -16,7 +16,7 @@ html {
 }
 
 #wrapper {
-  max-width: 1200px;
+  max-width: 100em;
   margin: 0 auto;
 }
 
