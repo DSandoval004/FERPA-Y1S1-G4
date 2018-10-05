@@ -8,7 +8,7 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-.topnav {
+/* .topnav {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, .25fr);
@@ -20,7 +20,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #315A59;
+    background-color: #A99888;
 }
 
 ul.topnav li {
@@ -29,7 +29,7 @@ ul.topnav li {
 
 ul.topnav li a {
     display: block;
-    color: white;
+    color: #111;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,12 +44,12 @@ ul.topnav li.right {
 }
 
 ul.topnav li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgb(150, 133, 117);
 }
 
 ul.topnav li.right {
     float: right;
-}
+} */
 
 #leftnav {
     height: 100%;
@@ -73,7 +73,7 @@ ul.topnav li.right {
     transition: 0.3s;
 }
 
-#leftnav ul{
+#leftnav ul {
     list-style-type: none;
 }
 
@@ -90,7 +90,7 @@ ul.topnav li.right {
 }
 
 #main {
-    transition: margin-left .5s;
+    transition: .5s;
     padding: 20px;
 }
 
@@ -116,7 +116,7 @@ p {
 
 /* Footer Styles */
 footer {
-    background-color: #315A59;
+    background-color: #A99888;
     text-align: center;
     padding: 10px;
     color: white;
@@ -134,25 +134,25 @@ footer a:active {
     color: rgba(255, 255, 255, .75);
 }
 
-#topimg{
-    background-image: url(../Images/Banner/FERPA_Banner.png);
+#topimg {
+    background-image: url(../Images/Banner/Banner-FERPA.png);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     max-width: 100%;
     height: auto;
 }
 
-.content{
+.content {
     position: relative;
-    padding: 150px 0 400px 0;
+    padding: 100px 0 200px 0;
 }
 
-.leftcol{
+.leftcol {
     float: left;
     width: 50%;
 }
 
-.rightcol{
+.rightcol {
     float: right;
     width: 45%;
 }
@@ -181,4 +181,10 @@ footer a:active {
         float: none;
     }
 
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
