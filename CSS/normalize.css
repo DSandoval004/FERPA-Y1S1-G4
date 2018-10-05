@@ -16,7 +16,7 @@ html {
 }
 
 #wrapper {
-  width: 75%;
+  max-width: 100em;
   margin: 0 auto;
 }
 
