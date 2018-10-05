@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html {
-    background-color: beige;
+    background-color: #DCCABD;
 }
 
 body {
@@ -20,7 +20,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #414C53;
+    background-color: #315A59;
 }
 
 ul.topnav li {
@@ -58,7 +58,7 @@ ul.topnav li.right {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #A99888;
     overflow-x: hidden;
     padding-top: 30px;
     transition: 0.5s;
@@ -68,7 +68,7 @@ ul.topnav li.right {
     padding: 10px 0px 6px 16px;
     text-decoration: none;
     font-size: 1.5em;
-    color: #818181;
+    color: #111;
     display: block;
     transition: 0.3s;
 }
@@ -111,12 +111,12 @@ ul.topnav li.right {
 }
 
 p {
-    text-indent: 50px;
+    text-indent: 2em;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #414C53;
+    background-color: #315A59;
     text-align: center;
     padding: 10px;
     color: white;
@@ -132,4 +132,53 @@ footer a:hover,
 footer a:active {
     text-decoration: none;
     color: rgba(255, 255, 255, .75);
+}
+
+#topimg{
+    background-image: url(../Images/Banner/FERPA_Banner.png);
+    background-size: cover;
+    background-position: center; 
+    max-width: 100%;
+    height: auto;
+}
+
+.content{
+    position: relative;
+    padding: 150px 0 400px 0;
+}
+
+.leftcol{
+    float: left;
+    width: 50%;
+}
+
+.rightcol{
+    float: right;
+    width: 45%;
+}
+
+.row::after {
+    content: "";
+    display: grid;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .leftcol {
+        width: 100%;
+    }
+
+    .rightcol {
+        width: 100%;
+    }
+
+    .topnav {
+        display: block;
+        width: 100;
+    }
+
+    ul.topnav li {
+        float: none;
+    }
+
 }
