@@ -195,8 +195,9 @@ button {
 }
 
 /* Image Styles */
-.side-images{
+.side-images {
     padding-top: 100px;
+    margin-bottom: 25px;
 }
 
 .column {
@@ -214,7 +215,7 @@ button {
     padding: 0 10px;
 }
 
-.container p{
+.container p {
     margin: 0 0 0 -20px;
 }
 
@@ -231,6 +232,7 @@ button {
     margin-right: auto;
     width: 25%;
 }
+
 /* Top Button Styles */
 #topBtn {
     display: none;
