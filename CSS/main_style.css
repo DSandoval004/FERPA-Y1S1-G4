@@ -112,6 +112,7 @@ ul.topnav li.right {
 
 p {
     text-indent: 2em;
+    font-size: 1.35em;
 }
 
 /* Footer Styles */
@@ -189,11 +190,78 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-button{
+button {
     border: none;
 }
 
 /* Image Styles */
-img.side-images {
-    padding: 10px;
+.side-images{
+    padding-top: 100px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0px 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 10px;
+}
+
+.container p{
+    margin: 0 0 0 -20px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+/* Top Button Styles */
+#topBtn {
+    display: none;
+    /* Hides Button by default */
+    position: fixed;
+    /*Makes Button Fixed/sticky in a position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgba(169, 152, 136, 0.925);
+    /* Set a background color */
+    color: #111;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#topBtn:hover {
+    background-color: white;
+    /* Add a dark-grey background on hover */
 }
