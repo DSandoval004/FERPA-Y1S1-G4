@@ -197,6 +197,7 @@ button {
 /* Image Styles */
 .side-images {
     padding-top: 100px;
+    margin-bottom: 25px;
 }
 
 .column {
