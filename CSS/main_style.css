@@ -84,9 +84,9 @@ ul.topnav li.right {
 #leftnav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 50px;
+    font-size: 2em;
+    margin-left: 45px;
 }
 
 #main {
@@ -140,8 +140,7 @@ footer a:active {
     background-image: url(../Images/Banner/Banner-FERPA.png);
     background-size: cover;
     background-position: center;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 
 .content {
@@ -174,13 +173,9 @@ footer a:active {
         width: 100%;
     }
 
-    .topnav {
-        display: block;
-        width: 100;
-    }
-
-    ul.topnav li {
-        float: none;
+    #topimg {
+        width: 85%;
+        padding-left: 80px;
     }
 
 }
@@ -193,6 +188,11 @@ hr {
 
 button {
     border: none;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Image Styles */

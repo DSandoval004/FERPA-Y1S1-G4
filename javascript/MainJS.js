@@ -2,6 +2,11 @@ function openNav() {
     document.getElementById("leftnav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.getElementById("navButton").style.visibility = "hidden";
+    if (mobileNav.matches) {
+        document.getElementById("leftnav").style.width = "100%";
+    } else {
+        document.getElementById("leftnav").style.width = "250px";
+    }
 }
 
 function closeNav() {
@@ -9,7 +14,7 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("navButton").style.visibility = "visible";
 }
-    
+
 window.onscroll = function () {
     scrollFunction()
 };
@@ -27,3 +32,7 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var mobileNav = window.matchMedia("(max-width: 600px)");
+openNav(mobileNav);
+mobileNav.addListener(openNav);
