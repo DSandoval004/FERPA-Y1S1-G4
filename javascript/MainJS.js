@@ -10,9 +10,10 @@ function openNav() {
         document.getElementById("main").style.marginLeft = "100%";
     } else {
         document.getElementById("leftnav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
     }
 }
-// This closes nav makes the widthe and margins 0 and the button visible
+// This closes nav makes the width and margins 0 and the button visible
 function closeNav() {
     document.getElementById("leftnav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
@@ -38,12 +39,4 @@ function topFunction() {
 }
 // variable for the mobile nav when the users on mobile then creates listener to the open nav function.
 var mobileNav = window.matchMedia("(max-width: 600px)");
-openNav(mobileNav);
 mobileNav.addListener(openNav);
-
-function navstart() {
-    document.getElementById("leftnav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.getElementById("navButton").style.visibility = "visible";
-    document.getElementById("leftnav").style.transitionDuration = "0s";
-}

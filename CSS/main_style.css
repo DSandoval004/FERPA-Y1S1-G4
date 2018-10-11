@@ -94,7 +94,7 @@ font-size is how big the button appears. */
 #leftnav .closebtn {
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 20px;
     font-size: 2em;
     margin-left: 45px;
 }
@@ -185,24 +185,7 @@ also clears both sides of the grid. */
     display: grid;
     clear: both;
 }
-/* This is a media query that affects certain selectors when the max-width is 600px and makes the 
-leftcol class a 100% in width and the rightcol class. Also sets the topimg id to 85% width and add 80px of padding on 
-the left. */
-@media screen and (max-width:600px) {
-    .leftcol {
-        width: 100%;
-    }
 
-    .rightcol {
-        width: 100%;
-    }
-
-    #topimg {
-        width: 85%;
-        padding-left: 80px;
-    }
-
-}
 /* This affects the buttons on the page and makes the borders hidden. */
 button {
     border: none;
@@ -230,6 +213,8 @@ margins to the bottom and 20px of padding to the right bottom and left. */
 /* This affects the card class and adds a box shadow around the section  */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 /* This affects the container class and adds 10px of padding to the right bottom and left  */
 .container {
@@ -252,7 +237,8 @@ to 25%. */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 96px;
+    height: 134px;
 }
 
 /* Top Button Styles */
@@ -286,10 +272,61 @@ to 25%. */
 }
 /* This affects the topBtn id on hover and changes the color to a dark grey color. */
 #topBtn:hover {
-    background-color: white;
+    background-color: rgb(148, 144, 144);
     /* Add a dark-grey background on hover */
 }
 /* This affects the id sourcep and changes the font size for this id to 1em. */
 #sourcep {
     font-size: 1em;
+}
+/* This affects the links in the card class and gets rid of the underline and makes the color a hex value */
+.card a{
+    text-decoration: none;
+    color: #111;
+}
+/* This affects the links that are hovered on in the card class and makes the text underlined and sets the 
+color to an rgb value. */
+.card a:hover{
+    text-decoration: underline;
+    color: rgb(148, 144, 144);
+}
+/* This affects content in the center class and makes the the text align to the center. */
+.center{
+    text-align: center;
+}
+
+ h2{
+    text-shadow: 4px 2px 1px#A99888;
+}
+
+/* This is a media query that affects certain selectors when the max-width is 600px and makes the 
+leftcol class a 100% in width and the rightcol class. Also sets the topimg id to 85% width and add 80px of padding on 
+the left. */
+@media screen and (max-width:600px) {
+    .leftcol {
+        width: 100%;
+    }
+
+    .rightcol {
+        width: 100%;
+    }
+
+    #topimg {
+        width: 85%;
+        padding-left: 80px;
+    }
+
+     #leftnav .closebtn{
+        position: absolute;
+        top: 0;
+        right: 300px;
+        font-size: 2em;
+        margin-left: 45px;
+    }
+
+    .column {
+        float: initial;
+        width: 100%;
+        padding: 0;
+    }
 }
