@@ -54,6 +54,7 @@ ul.topnav li a:hover:not(.active) {
 ul.topnav li.right {
     float: right;
 } */
+
 /* New Nav sets the id leftnav heigt to 100% and width to 0. Makes the position fixed and sets the z-index to 1 so it doesn't stack content. sets distance from top and left to 0 and background color to a hex value. The overflow in the x direction is hidden and padding is set to 30px on top. The transition speed is set to a half a second. */
 #leftnav {
     height: 100%;
@@ -171,18 +172,22 @@ footer a:active {
     float: left;
     width: 50%;
 }
-
+/* This affects the class rightcol and floats all content to the right and makes the width 45% of the
+page */
 .rightcol {
     float: right;
     width: 45%;
 }
-
+/* affects evreything after the row class and sets content to an empty set of quotes and sets the display typ to grid
+also clears both sides of the grid. */
 .row::after {
     content: "";
     display: grid;
     clear: both;
 }
-
+/* This is a media query that affects certain selectors when the max-width is 600px and makes the 
+leftcol class a 100% in width and the rightcol class. Also sets the topimg id to 85% width and add 80px of padding on 
+the left. */
 @media screen and (max-width:600px) {
     .leftcol {
         width: 100%;
@@ -198,54 +203,51 @@ footer a:active {
     }
 
 }
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
+/* This affects the buttons on the page and makes the borders hidden. */
 button {
     border: none;
 }
-
+/* This affects the class responsive and makes the max-width to 100% and the height is set to auto. */
 .responsive {
     max-width: 100%;
     height: auto;
 }
 
 /* Image Styles */
+/* This affect the class side-images and creates 100px of padding on the top and 25 px of margins on the bottom */
 .side-images {
     padding-top: 100px;
     margin-bottom: 25px;
 }
-
+/* This affects the class column and floats all content to the left and sets the width to 30% also adds 16px of 
+margins to the bottom and 20px of padding to the right bottom and left. */
 .column {
     float: left;
     width: 30%;
     margin-bottom: 16px;
     padding: 0px 20px;
 }
-
+/* This affects the card class and adds a box shadow around the section  */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
+/* This affects the container class and adds 10px of padding to the right bottom and left  */
 .container {
     padding: 0 10px;
 }
-
+/* This affects the p tags in the container class and sets the bottom margin to negative 20px */
 .container p {
     margin: 0 0 0 -20px;
 }
-
+/* This affects the container and row class after the original content clearing both sides of the grid */
 .container::after,
 .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: grid;
 }
-
+/* This affects the headshot id and makes the images block and the left and right margins auto and the width
+to 25%. */
 #headshot {
     display: block;
     margin-left: auto;
@@ -282,12 +284,12 @@ button {
     font-size: 18px;
     /* Increase font size */
 }
-
+/* This affects the topBtn id on hover and changes the color to a dark grey color. */
 #topBtn:hover {
     background-color: white;
     /* Add a dark-grey background on hover */
 }
-
+/* This affects the id sourcep and changes the font size for this id to 1em. */
 #sourcep {
     font-size: 1em;
 }
