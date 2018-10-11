@@ -1,13 +1,17 @@
+/* Sets the character encoding to UTF-8 */
 @charset "utf-8";
 
+/* Sets the background color to a hex value */
 html {
     background-color: #DCCABD;
 }
 
+/* sets the font family to Rubik which is a google font */
 body {
     font-family: 'Rubik', sans-serif;
 }
 
+/* old nav  */
 /* .topnav {
     display: grid;
     grid-gap: 10px;
@@ -51,6 +55,7 @@ ul.topnav li.right {
     float: right;
 } */
 
+/* New Nav sets the id leftnav heigt to 100% and width to 0. Makes the position fixed and sets the z-index to 1 so it doesn't stack content. sets distance from top and left to 0 and background color to a hex value. The overflow in the x direction is hidden and padding is set to 30px on top. The transition speed is set to a half a second. */
 #leftnav {
     height: 100%;
     width: 0;
@@ -64,6 +69,7 @@ ul.topnav li.right {
     transition: 0.5s;
 }
 
+/* This affects the links in the leftnav and makes the padding 10px on top and 0 right and 6 on the bottom also makes it 16px on the left. */
 #leftnav a {
     padding: 10px 0px 6px 16px;
     text-decoration: none;
@@ -73,14 +79,18 @@ ul.topnav li.right {
     transition: 0.3s;
 }
 
+/* This affect the unordered lists in the id leftnav and makes the bullets disapear. */
 #leftnav ul {
     list-style-type: none;
 }
 
+/* This affects the links that are hovered over in the leftnav and makes the color a white hex value. */
 #leftnav a:hover {
     color: #f1f1f1;
 }
 
+/* Affects the closebutton in the left nav and makes the position absolute so it can't be pushed of the screen. Top is set to 0 and the
+font-size is how big the button appears. */
 #leftnav .closebtn {
     position: absolute;
     top: 0;
@@ -89,11 +99,13 @@ ul.topnav li.right {
     margin-left: 45px;
 }
 
+/* affects the id main and sets transition speed to half a second plus makes padding 20 px all around. */
 #main {
     transition: .5s;
     padding: 20px;
 }
 
+/* This changes the left nav padding on the top when the max-heght is 450px and the links in the left nav to .5 em's */
 @media screen and (max-height: 450px) {
     #leftnav {
         padding-top: 15px;
@@ -104,6 +116,7 @@ ul.topnav li.right {
     }
 }
 
+/* This affects the navbutton and sets the image to the three lines image and sets the width and height to 34px and makes the position fixed. */
 #navButton {
     background: url(../Images/Three\ Lines\ .png) no-repeat;
     width: 34px;
@@ -111,12 +124,14 @@ ul.topnav li.right {
     position: fixed;
 }
 
+/* affects the p tag and makes the text indent 2 em and the font size to 1.35 */
 p {
     text-indent: 2em;
     font-size: 1.35em;
 }
 
 /* Footer Styles */
+/* affects the footer and makes the background color a hex value. then centers the text and make the padding 10px. */
 footer {
     background-color: #A99888;
     text-align: center;
@@ -124,18 +139,21 @@ footer {
     color: white;
 }
 
+/* affects the links in the footer and gets rid of text decoration. ALso makes text color white. */
 footer a:link,
 footer a:visited {
     text-decoration: none;
     color: white;
 }
 
+/* Affects the links that are hovered on in the footer and the active links. Makes the text decoration none and sets text color to an rgba value. */
 footer a:hover,
 footer a:active {
     text-decoration: none;
     color: rgba(255, 255, 255, .75);
 }
 
+/* Affects the id topimg and sets the background image to the banner Ferpa image. Sets the size of the image to cover the page and centers the image. also makes the width 100% */
 #topimg {
     background-image: url(../Images/Banner/Banner-FERPA.png);
     background-size: cover;
@@ -143,27 +161,33 @@ footer a:active {
     width: 100%;
 }
 
+/* Affects the content class and makes the postion relative and the padding 100px on the top and 0 on the right and 200px on the bottom */
 .content {
     position: relative;
     padding: 100px 0 200px 0;
 }
 
+/* Affects leftcol class and floats left and sets the width to 50% */
 .leftcol {
     float: left;
     width: 50%;
 }
-
+/* This affects the class rightcol and floats all content to the right and makes the width 45% of the
+page */
 .rightcol {
     float: right;
     width: 45%;
 }
-
+/* affects evreything after the row class and sets content to an empty set of quotes and sets the display typ to grid
+also clears both sides of the grid. */
 .row::after {
     content: "";
     display: grid;
     clear: both;
 }
-
+/* This is a media query that affects certain selectors when the max-width is 600px and makes the 
+leftcol class a 100% in width and the rightcol class. Also sets the topimg id to 85% width and add 80px of padding on 
+the left. */
 @media screen and (max-width:600px) {
     .leftcol {
         width: 100%;
@@ -179,54 +203,51 @@ footer a:active {
     }
 
 }
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
+/* This affects the buttons on the page and makes the borders hidden. */
 button {
     border: none;
 }
-
+/* This affects the class responsive and makes the max-width to 100% and the height is set to auto. */
 .responsive {
     max-width: 100%;
     height: auto;
 }
 
 /* Image Styles */
+/* This affect the class side-images and creates 100px of padding on the top and 25 px of margins on the bottom */
 .side-images {
     padding-top: 100px;
     margin-bottom: 25px;
 }
-
+/* This affects the class column and floats all content to the left and sets the width to 30% also adds 16px of 
+margins to the bottom and 20px of padding to the right bottom and left. */
 .column {
     float: left;
     width: 30%;
     margin-bottom: 16px;
     padding: 0px 20px;
 }
-
+/* This affects the card class and adds a box shadow around the section  */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
+/* This affects the container class and adds 10px of padding to the right bottom and left  */
 .container {
     padding: 0 10px;
 }
-
+/* This affects the p tags in the container class and sets the bottom margin to negative 20px */
 .container p {
     margin: 0 0 0 -20px;
 }
-
+/* This affects the container and row class after the original content clearing both sides of the grid */
 .container::after,
 .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: grid;
 }
-
+/* This affects the headshot id and makes the images block and the left and right margins auto and the width
+to 25%. */
 #headshot {
     display: block;
     margin-left: auto;
@@ -263,12 +284,12 @@ button {
     font-size: 18px;
     /* Increase font size */
 }
-
+/* This affects the topBtn id on hover and changes the color to a dark grey color. */
 #topBtn:hover {
     background-color: white;
     /* Add a dark-grey background on hover */
 }
-
+/* This affects the id sourcep and changes the font size for this id to 1em. */
 #sourcep {
     font-size: 1em;
 }

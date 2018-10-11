@@ -7,6 +7,7 @@
     <title>FERPA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Links stylesheets to the html document -->
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/main_style.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
@@ -33,18 +34,23 @@
 
 </head>
 
-<body>
+<body onload="navstart()">
+    <!-- This is the div that contains main content of the page -->
     <div id="main">
-        <button id="navButton" onclick="openNav()"></button>
+         <!-- This button is the button the user clicks on to open the nav -->
+         <button id="navButton" onclick="openNav()"></button>
+         <!-- This div is a wrapper to create space on the edges of the page -->
         <div id="wrapper">
-            <header>
-                <!-- <ul class="topnav">
+            <!-- old nav -->
+            <!-- <header>
+                <ul class="topnav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="protection.html">Protection</a></li>
                     <li><a href="history.html">History</a></li>
-                </ul> -->
-            </header>
+                </ul> 
+            </header> -->
+            <!-- This is the section element that is used for the banner image -->
             <section id="topimg" class="text-center">
                 <div class="content">
                 </div>
@@ -111,10 +117,11 @@
                 <a href="tel:1623738002">(623)
                     738-0022</a>
             </footer>
+            <!-- this button is the topbutton that brings the user to the top of the page. -->
             <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
         </div>
     </div>
-
+    <!-- This is the nav that the user sees once the nav button is clicked  -->
     <aside id="leftnav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
@@ -126,7 +133,7 @@
         </ul>
     </aside>
 
-
+<!-- this links the javascript file to the HTML document -->
     <script src="javascript/MainJS.js" async defer></script>
 </body>
 
